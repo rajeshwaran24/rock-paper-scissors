@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <title>rock-paper-scissor</title>
+  <!-- fontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- normalize css -->
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  
+</head>
+<body>
+  <div class="card">
+    <h1 class="heading">ROCK PAPER SCISSORS</h1>
+    <div class="score">
+      <p>user score :<span class="user-score"> 0</span></p>
+      <p>computer score :<span class="current-score"> 0</span></p>
+    </div>
+    <div class="button">
+      <button class="rock" onclick="getUserChoice('rock')"><i class="fa-sharp fa-solid fa-hand-back-fist"></i></button>
+      <button class="paper" onclick="getUserChoice('paper')"><i class="fa-sharp fa-solid fa-hand"></i></button>
+      <button class="scissor" onclick="getUserChoice('scissors')"><i class="fa-sharp fa-solid fa-hand-scissors"></i></button>
+    </div>
+
+    <div class="result-container">
+    <p class="user-choice"></p>
+    <p class="computer-choice"></p>
+    <p class="result"></p>
+
+    </div>
+
+    <div class="reset">
+      <button class="btn">Reset</button>
+    </div>
+  </div>
+
+<!-- script js -->
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
